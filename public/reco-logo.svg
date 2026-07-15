@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
+  <title id="title">Reco Universal Global Talent</title>
+  <desc id="desc">Reco Universal globe mark with company wordmark.</desc>
+  <rect width="760" height="220" rx="18" fill="#0B2A5B"/>
+  <path d="M0 0h760M0 28h760M0 56h760M0 84h760M0 112h760M0 140h760M0 168h760M0 196h760M0 0v220M28 0v220M56 0v220M84 0v220M112 0v220M140 0v220M168 0v220M196 0v220M224 0v220M252 0v220M280 0v220M308 0v220M336 0v220M364 0v220M392 0v220M420 0v220M448 0v220M476 0v220M504 0v220M532 0v220M560 0v220M588 0v220M616 0v220M644 0v220M672 0v220M700 0v220M728 0v220" stroke="#173B73" stroke-width="1"/>
+  <g transform="translate(290 22)">
+    <circle cx="86" cy="56" r="48" fill="#071B46"/>
+    <path d="M41 58c13-25 30-40 52-44 24-5 44 3 58 22-14-11-32-14-53-9-25 6-45 19-57 31Z" fill="#1356D8"/>
+    <path d="M28 79c13-31 44-57 84-68 17-5 33-6 47-3-16 2-32 7-50 14-36 15-63 35-81 57Z" fill="#0E3FA3"/>
+    <path d="M45 69c31-20 62-34 96-40" stroke="#E7F0FF" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <g fill="#AFCBFF">
+      <circle cx="57" cy="43" r="4"/><circle cx="72" cy="36" r="4"/><circle cx="88" cy="32" r="4"/><circle cx="106" cy="32" r="4"/><circle cx="123" cy="37" r="4"/>
+      <circle cx="52" cy="61" r="4.5"/><circle cx="70" cy="56" r="4.5"/><circle cx="88" cy="52" r="4.5"/><circle cx="107" cy="53" r="4.5"/><circle cx="127" cy="59" r="4.5"/>
+      <circle cx="61" cy="81" r="4.4"/><circle cx="80" cy="77" r="4.4"/><circle cx="99" cy="76" r="4.4"/><circle cx="118" cy="80" r="4.4"/>
+      <circle cx="77" cy="97" r="3.8"/><circle cx="94" cy="98" r="3.8"/><circle cx="112" cy="97" r="3.8"/>
+    </g>
+  </g>
+  <text x="380" y="154" text-anchor="middle" fill="#FFFFFF" font-family="Arial Black, Impact, sans-serif" font-size="58" font-weight="900" letter-spacing="2">RECO UNIVERSAL</text>
+  <text x="380" y="194" text-anchor="middle" fill="#2D7BFF" font-family="Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="18">GLOBAL TALENT</text>
+</svg>
