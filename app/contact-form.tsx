@@ -41,16 +41,16 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-lg border border-white/10 bg-[#071322]/92 p-5 shadow-2xl shadow-blue-950/30 sm:p-7"
+      className="motion-card rounded-lg border border-white/10 bg-[#071322]/92 p-5 shadow-2xl shadow-blue-950/30 sm:p-7"
     >
       <div className="flex items-start gap-4 border-b border-white/10 pb-6">
         <div className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-blue-500/15 text-blue-100">
           <Mail className="h-5 w-5" aria-hidden="true" />
         </div>
         <div>
-          <h3 className="text-xl font-bold text-white">Contact Reco Universal</h3>
+          <h3 className="text-xl font-bold text-white">Start a conversation</h3>
           <p className="mt-1 text-sm leading-6 text-slate-300">
-            Tell us what you need. Project requests and client issues route to the right team.
+            Send a brief request. We will follow up with the right next step.
           </p>
         </div>
       </div>
@@ -64,8 +64,8 @@ export function ContactForm() {
             className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition focus:border-blue-300"
             defaultValue="contact"
           >
-            <option value="contact">New project / general contact</option>
-            <option value="support">Client support request</option>
+            <option value="contact">Project inquiry</option>
+            <option value="support">Client support</option>
           </select>
         </label>
         <label className="grid gap-2 text-sm font-semibold text-slate-200">
@@ -75,7 +75,7 @@ export function ContactForm() {
             type="email"
             required
             autoComplete="email"
-            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300"
+            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
             placeholder="name@company.com"
           />
         </label>
@@ -85,7 +85,7 @@ export function ContactForm() {
             name="name"
             required
             autoComplete="name"
-            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300"
+            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
             placeholder="Your name"
           />
         </label>
@@ -94,7 +94,7 @@ export function ContactForm() {
           <input
             name="company"
             autoComplete="organization"
-            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300"
+            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
             placeholder="Company name"
           />
         </label>
@@ -104,7 +104,7 @@ export function ContactForm() {
             name="phone"
             type="tel"
             autoComplete="tel"
-            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300"
+            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
             placeholder="+1 555 000 0000"
           />
         </label>
@@ -112,7 +112,7 @@ export function ContactForm() {
           Timeline
           <select
             name="timeline"
-            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition focus:border-blue-300"
+            className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
             defaultValue="Not sure yet"
           >
             <option>ASAP</option>
@@ -129,8 +129,8 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          className="resize-none rounded-md border border-white/10 bg-slate-950 p-3 text-sm leading-6 text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300"
-          placeholder="Describe the project, issue, application, team need, or support request."
+          className="resize-none rounded-md border border-white/10 bg-slate-950 p-3 text-sm leading-6 text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
+          placeholder="Briefly describe the request."
         />
       </label>
 
@@ -138,7 +138,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blue-500 px-5 text-sm font-bold text-white transition hover:bg-blue-400 disabled:cursor-not-allowed disabled:opacity-70"
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blue-500 px-5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-400 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {status === "submitting" ? (
             <>

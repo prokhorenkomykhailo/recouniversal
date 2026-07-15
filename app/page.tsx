@@ -26,47 +26,47 @@ const services = [
   {
     icon: Code2,
     title: "Custom Software Development",
-    body: "Business applications, SaaS platforms, dashboards, and internal tools built with maintainable architecture and clear release paths.",
+    body: "Business applications, SaaS platforms, dashboards, and internal tools built for maintainable growth.",
   },
   {
     icon: Cloud,
     title: "Cloud & Infrastructure",
-    body: "Cloud setup, migrations, CI/CD, monitoring, and deployment practices for teams that need stable production systems.",
+    body: "Cloud setup, migrations, CI/CD, and monitoring for stable production systems.",
   },
   {
     icon: ShieldCheck,
     title: "Security & Compliance Support",
-    body: "Application hardening, access control, secure development practices, and risk reviews for growing organizations.",
+    body: "Application hardening, access control, secure development practices, and practical risk reviews.",
   },
   {
     icon: BrainCircuit,
     title: "AI & Data Enablement",
-    body: "Practical AI workflows, reporting systems, data integrations, and automation that reduce manual operational work.",
+    body: "AI workflows, reporting systems, data integrations, and automation for operational leverage.",
   },
   {
     icon: Database,
     title: "Systems Integration",
-    body: "Connect CRMs, ERPs, payment systems, data stores, and third-party platforms with clean APIs and reliable automation.",
+    body: "Connect CRMs, ERPs, payment systems, data stores, and third-party platforms with reliable APIs.",
   },
   {
     icon: ServerCog,
     title: "Managed Technical Support",
-    body: "Post-launch maintenance, issue triage, performance checks, and roadmap support for applications already in production.",
+    body: "Post-launch maintenance, triage, performance checks, and roadmap support for live applications.",
   },
 ];
 
 const deliverySteps = [
   {
     title: "Discovery and technical plan",
-    body: "We clarify goals, users, constraints, systems, and risks before writing code so the build starts with a realistic path.",
+    body: "We define objectives, constraints, systems, and risk before implementation begins.",
   },
   {
     title: "Design, engineering, and integration",
-    body: "Our team turns requirements into production-ready interfaces, APIs, cloud services, and integrations.",
+    body: "We turn requirements into production-ready interfaces, APIs, services, and integrations.",
   },
   {
     title: "Launch, support, and improvement",
-    body: "After release, we help monitor performance, handle support, improve features, and keep the system secure.",
+    body: "We support release, monitor performance, resolve issues, and improve the system.",
   },
 ];
 
@@ -82,10 +82,10 @@ const capabilities = [
 ];
 
 const proofPoints = [
-  ["Client-ready", "Executive-level communication and structured delivery updates"],
+  ["Client-ready", "Executive communication and structured delivery updates"],
   ["Secure", "Security-minded architecture, access control, and release discipline"],
   ["Scalable", "Cloud, data, and application patterns designed for growth"],
-  ["Practical", "Recommendations grounded in budget, timeline, and business context"],
+  ["Practical", "Recommendations grounded in budget, timeline, and context"],
 ];
 
 const workCards = [
@@ -93,25 +93,25 @@ const workCards = [
     image: "/software-workspace.jpg",
     label: "Product Engineering",
     title: "Client portals and workflow platforms",
-    body: "Secure web applications for approvals, account management, reporting, and operational collaboration.",
+    body: "Secure portals for approvals, accounts, reporting, and operations.",
   },
   {
     image: "/data-dashboard.jpg",
     label: "Data Systems",
     title: "Dashboards, reporting, and decision support",
-    body: "Data pipelines and visual interfaces that help teams understand performance and reduce manual spreadsheet work.",
+    body: "Data pipelines and dashboards that reduce manual reporting.",
   },
   {
     image: "/cloud-servers.jpg",
     label: "Infrastructure",
     title: "Cloud modernization and deployment reliability",
-    body: "Production environments, deployment workflows, monitoring, and infrastructure patterns for growing software teams.",
+    body: "Production environments, deployment workflows, monitoring, and cloud operations.",
   },
   {
     image: "/code-monitor.jpg",
     label: "Technical Consulting",
     title: "Legacy recovery and roadmap planning",
-    body: "Codebase reviews, architecture planning, and staged modernization programs that reduce delivery risk.",
+    body: "Codebase reviews, architecture planning, and staged modernization programs.",
   },
 ];
 
@@ -129,19 +129,19 @@ const industries = [
 const testimonials = [
   {
     quote:
-      "Reco Universal gives clients a direct path from idea to implementation, with the kind of technical ownership stakeholders expect from a serious delivery partner.",
+      "Reco Universal gives clients a direct path from idea to implementation with accountable technical ownership.",
     name: "Client Delivery",
     role: "Software consulting engagement",
   },
   {
     quote:
-      "The team is structured around practical execution: clear scope, reliable communication, production awareness, and ongoing support after launch.",
+      "The team focuses on clear scope, reliable communication, production awareness, and post-launch support.",
     name: "Technical Leadership",
     role: "Application modernization program",
   },
   {
     quote:
-      "For organizations without a full internal engineering department, Reco Universal can help fill the gap across planning, development, cloud, and support.",
+      "For teams without full internal engineering coverage, Reco Universal supports planning, development, cloud, and operations.",
     name: "Operations Partner",
     role: "IT consulting support",
   },
@@ -150,15 +150,15 @@ const testimonials = [
 const insightCards = [
   {
     title: "Choosing the right development partner",
-    body: "A reliable partner should clarify scope, surface risk early, communicate tradeoffs, and maintain the system after launch.",
+    body: "A strong partner clarifies scope, surfaces risk early, and supports the system after launch.",
   },
   {
     title: "Why modernization projects fail",
-    body: "Most failures come from unclear ownership, undocumented systems, rushed migrations, and no staged rollout plan.",
+    body: "Most failures come from unclear ownership, poor documentation, and rushed rollout plans.",
   },
   {
     title: "What support should include",
-    body: "Support should cover triage, monitoring, release hygiene, documentation, and a practical route for feature improvements.",
+    body: "Support should include triage, monitoring, release hygiene, documentation, and improvement planning.",
   },
 ];
 
@@ -214,21 +214,21 @@ function Brand({ compact = false }: { compact?: boolean }) {
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#050A13] text-white">
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#06101E]/88 backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#06101E]/88 backdrop-blur-xl transition-colors duration-300">
         <div className="mx-auto flex h-18 max-w-[1500px] items-center justify-between px-5 py-3 sm:px-8">
           <a href="#top" aria-label="Reco Universal home">
             <Brand />
           </a>
           <nav className="hidden items-center gap-6 xl:flex" aria-label="Primary navigation">
             {navItems.map(([label, href]) => (
-              <a key={href} href={href} className="text-sm font-semibold text-slate-300 transition hover:text-blue-200">
+              <a key={href} href={href} className="text-sm font-semibold text-slate-300 transition hover:-translate-y-0.5 hover:text-blue-200">
                 {label}
               </a>
             ))}
           </nav>
           <a
             href="#contact"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-blue-500 px-4 text-sm font-bold text-white transition hover:bg-blue-400"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-blue-500 px-4 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-400"
           >
             Contact
           </a>
@@ -239,41 +239,40 @@ export default function Home() {
         <img
           src="/network-rack.jpg"
           alt="Dark network infrastructure with blue lighting"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-pan-slow"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,14,0.98)_0%,rgba(4,10,22,0.92)_45%,rgba(4,12,26,0.72)_100%)]" />
         <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#03070E] to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#050A13] to-transparent" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(125,179,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(125,179,255,0.07)_1px,transparent_1px)] bg-[size:88px_88px] opacity-28" />
-        <div className="absolute left-0 top-1/4 h-[28rem] w-[28rem] rounded-full bg-blue-500/16 blur-3xl" />
-        <div className="absolute right-0 top-20 h-[36rem] w-[36rem] rounded-full bg-sky-400/12 blur-3xl" />
-        <div className="absolute bottom-20 right-[18%] h-44 w-44 rounded-full bg-emerald-300/10 blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(125,179,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(125,179,255,0.07)_1px,transparent_1px)] bg-[size:88px_88px] opacity-28 animate-dot-flow" />
+        <div className="absolute left-0 top-1/4 h-[28rem] w-[28rem] rounded-full bg-blue-500/16 blur-3xl animate-glow-pulse" />
+        <div className="absolute right-0 top-20 h-[36rem] w-[36rem] rounded-full bg-sky-400/12 blur-3xl animate-glow-pulse animation-delay-300" />
+        <div className="absolute bottom-20 right-[18%] h-44 w-44 rounded-full bg-emerald-300/10 blur-3xl animate-glow-pulse animation-delay-500" />
 
         <div className="relative mx-auto grid min-h-[calc(100svh-5rem)] max-w-[1500px] items-center gap-14 px-5 py-16 sm:px-8 lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl animate-fade-up">
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-blue-300/20 bg-white/[0.06] px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-100 shadow-2xl shadow-blue-950/30 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-blue-300 shadow-[0_0_18px_rgba(147,197,253,0.8)]" />
               Global software development and IT consulting
             </div>
             <h1 className="max-w-3xl text-4xl font-black leading-[1.06] tracking-normal text-white sm:text-5xl lg:text-6xl">
-              Software, cloud, and IT teams for serious business systems.
+              Software, cloud, and IT teams for critical business systems.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              Reco Universal helps organizations turn product ideas, IT needs, and operational
-              bottlenecks into secure applications, cloud systems, data workflows, and long-term
-              support programs.
+              Reco Universal turns product ideas, IT needs, and operational challenges into secure
+              applications, cloud systems, data workflows, and support programs.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blue-500 px-6 text-sm font-bold text-white shadow-xl shadow-blue-950/40 transition hover:bg-blue-400"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-blue-500 px-6 text-sm font-bold text-white shadow-xl shadow-blue-950/40 transition hover:-translate-y-0.5 hover:bg-blue-400"
               >
                 Start a conversation
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </a>
               <a
                 href="#services"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-white/18 bg-white/8 px-5 text-sm font-bold text-white transition hover:border-blue-200/60 hover:bg-blue-200/10"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-white/18 bg-white/8 px-5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-blue-200/60 hover:bg-blue-200/10"
               >
                 Explore services
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -286,7 +285,7 @@ export default function Home() {
                 ["02", "Product and cloud engineering"],
                 ["03", "Support and optimization"],
               ].map(([title, body]) => (
-                <div key={title} className="rounded-lg border border-white/10 bg-white/[0.055] p-4 shadow-xl shadow-blue-950/20 backdrop-blur">
+                <div key={title} className="motion-card rounded-lg border border-white/10 bg-white/[0.055] p-4 shadow-xl shadow-blue-950/20 backdrop-blur">
                   <div className="text-lg font-black text-blue-200">{title}</div>
                   <div className="mt-2 text-sm font-semibold text-slate-200">{body}</div>
                 </div>
@@ -294,68 +293,68 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute -left-12 top-8 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl" />
-            <div className="absolute -right-8 bottom-12 h-72 w-72 rounded-full bg-cyan-300/12 blur-3xl" />
+          <div className="relative animate-fade-up animation-delay-200">
+            <div className="absolute -left-12 top-8 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl animate-glow-pulse" />
+            <div className="absolute -right-8 bottom-12 h-72 w-72 rounded-full bg-cyan-300/12 blur-3xl animate-glow-pulse animation-delay-300" />
             <div className="relative grid gap-5">
               <div className="grid min-h-[520px] gap-5 md:grid-cols-[1.05fr_0.95fr]">
-                <div className="grid gap-5">
-                  <figure className="group relative min-h-[320px] overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
+                <div className="grid gap-5 animate-card-breathe">
+                  <figure className="motion-card flow-card group relative min-h-[320px] overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
                     <img
                       src="/code-monitor.jpg"
                       alt="Software engineer working in a dark development environment"
-                      className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                      className="absolute inset-0 h-full w-full object-cover animate-image-drift"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#02060E]/88 via-transparent to-transparent" />
                   </figure>
                   <div className="grid grid-cols-2 gap-5">
-                    <figure className="group relative h-44 overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/20">
+                    <figure className="motion-card flow-card group relative h-44 overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/20">
                       <img
                         src="/data-dashboard.jpg"
                         alt="Data analytics dashboard"
-                        className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                        className="absolute inset-0 h-full w-full object-cover animate-image-drift animation-delay-200"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#02060E]/65 to-transparent" />
                     </figure>
-                    <figure className="group relative h-44 overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/20">
+                    <figure className="motion-card flow-card group relative h-44 overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/20">
                       <img
                         src="/software-workspace.jpg"
                         alt="Software development workspace"
-                        className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                        className="absolute inset-0 h-full w-full object-cover animate-image-drift animation-delay-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#02060E]/65 to-transparent" />
                     </figure>
                   </div>
                 </div>
 
-                <div className="grid gap-5 md:pt-14">
-                  <figure className="group relative min-h-[230px] overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
+                <div className="grid gap-5 md:pt-14 animate-card-breathe animation-delay-300">
+                  <figure className="motion-card flow-card group relative min-h-[230px] overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
                     <img
                       src="/cloud-servers.jpg"
                       alt="Cloud infrastructure server racks"
-                      className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                      className="absolute inset-0 h-full w-full object-cover animate-image-drift animation-delay-100"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#02060E]/76 via-transparent to-transparent" />
                   </figure>
-                  <figure className="group relative min-h-[260px] overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
+                  <figure className="motion-card flow-card group relative min-h-[260px] overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04] shadow-2xl shadow-blue-950/30">
                     <img
                       src="/hero-infrastructure.jpg"
                       alt="Enterprise infrastructure hardware"
-                      className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                      className="absolute inset-0 h-full w-full object-cover animate-image-drift animation-delay-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#02060E]/76 via-transparent to-transparent" />
                   </figure>
                 </div>
               </div>
 
-              <div className="grid gap-3 rounded-2xl border border-white/10 bg-[#050A13]/70 p-4 shadow-2xl shadow-blue-950/20 backdrop-blur sm:grid-cols-4">
+              <div className="flow-card grid gap-3 rounded-2xl border border-white/10 bg-[#050A13]/70 p-4 shadow-2xl shadow-blue-950/20 backdrop-blur sm:grid-cols-4">
                 {[
                   ["2020", "Founded"],
                   ["NYC", "Base"],
                   ["11-50", "Team"],
                   ["Global", "Reach"],
                 ].map(([value, label]) => (
-                  <div key={label} className="rounded-xl border border-white/10 bg-white/[0.045] p-4">
+                    <div key={label} className="motion-card rounded-xl border border-white/10 bg-white/[0.045] p-4">
                     <div className="text-2xl font-black text-white">{value}</div>
                     <div className="mt-1 text-xs font-bold uppercase tracking-[0.15em] text-slate-400">{label}</div>
                   </div>
@@ -366,24 +365,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="border-y border-white/10 bg-[#07111E] py-24">
+      <section id="services" className="flow-grid border-y border-white/10 bg-[#07111E] py-24">
         <div className="mx-auto max-w-[1500px] px-5 sm:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Core services</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Technology consulting with practical engineering ownership.
+                Practical engineering for critical systems.
               </h2>
             </div>
             <p className="text-base leading-8 text-slate-300">
-              Clients come to Reco Universal when they need a team that can understand the business
-              problem, choose a realistic technical direction, and build software that survives
-              production use.
+              We help teams define the right technical path, build with discipline, and support
+              production systems after launch.
             </p>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {services.map(({ icon: Icon, title, body }) => (
-              <article key={title} className="rounded-lg border border-white/10 bg-white/[0.045] p-7">
+              <article key={title} className="motion-card flow-card rounded-lg border border-white/10 bg-white/[0.045] p-7">
                 <Icon className="h-7 w-7 text-blue-200" aria-hidden="true" />
                 <h3 className="mt-6 text-xl font-bold text-white">{title}</h3>
                 <p className="mt-4 text-sm leading-6 text-slate-300">{body}</p>
@@ -393,11 +391,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#050A13] py-20">
+      <section className="flow-grid bg-[#050A13] py-20">
         <div className="mx-auto max-w-[1500px] px-5 sm:px-8">
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {proofPoints.map(([title, body]) => (
-              <article key={title} className="rounded-lg border border-blue-300/15 bg-blue-500/[0.07] p-6">
+              <article key={title} className="motion-card flow-card rounded-lg border border-blue-300/15 bg-blue-500/[0.07] p-6">
                 <CheckCircle2 className="h-6 w-6 text-blue-200" aria-hidden="true" />
                 <h3 className="mt-5 text-xl font-bold text-white">{title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-300">{body}</p>
@@ -407,24 +405,25 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="border-y border-white/10 bg-[#07111E] py-24">
+      <section id="work" className="flow-grid border-y border-white/10 bg-[#07111E] py-24">
         <div className="mx-auto max-w-[1500px] px-5 sm:px-8">
           <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Representative work</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Realistic delivery areas for clients and recruiters to understand.
+                Delivery areas clients can understand.
               </h2>
             </div>
             <p className="max-w-xl text-base leading-8 text-slate-300">
-              These examples describe the kind of client-facing work Reco Universal is positioned
-              to deliver across software, infrastructure, data, and support.
+              Representative work across software, infrastructure, data, and support.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {workCards.map((card) => (
-              <article key={card.title} className="overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]">
-                <img src={card.image} alt="" className="h-56 w-full object-cover" />
+              <article key={card.title} className="motion-card flow-card overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]">
+                <div className="h-56 overflow-hidden">
+                  <img src={card.image} alt="" className="h-full w-full object-cover animate-image-drift" />
+                </div>
                 <div className="p-6">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-300">{card.label}</p>
                   <h3 className="mt-3 text-xl font-bold text-white">{card.title}</h3>
@@ -444,8 +443,7 @@ export default function Home() {
               From strategy to production support.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              We structure work around the needs of the client: discovery when the idea is early,
-              implementation when the roadmap is clear, and support when the system is live.
+              We align scope, engineering, launch, and support around business priorities.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               {capabilities.map((capability) => (
@@ -457,7 +455,7 @@ export default function Home() {
           </div>
           <div className="grid gap-4">
             {deliverySteps.map((step, index) => (
-              <article key={step.title} className="rounded-lg border border-white/10 bg-[#071322] p-6">
+              <article key={step.title} className="motion-card flow-card rounded-lg border border-white/10 bg-[#071322] p-6">
                 <div className="flex items-start gap-4">
                   <div className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-blue-500 text-sm font-black text-white">
                     {index + 1}
@@ -477,8 +475,10 @@ export default function Home() {
             ["/network-rack.jpg", "Network server rack with blue lighting", "Infrastructure and IT"],
             ["/data-dashboard.jpg", "Data visualization dashboard", "Data and reporting"],
           ].map(([src, alt, label]) => (
-            <figure key={src} className="overflow-hidden rounded-lg border border-white/10 bg-white/[0.035]">
-              <img src={src} alt={alt} className="h-56 w-full object-cover" />
+            <figure key={src} className="motion-card flow-card overflow-hidden rounded-lg border border-white/10 bg-white/[0.035]">
+              <div className="h-56 overflow-hidden">
+                <img src={src} alt={alt} className="h-full w-full object-cover animate-image-drift" />
+              </div>
               <figcaption className="flex items-center gap-2 p-4 text-sm font-bold text-slate-200">
                 <CheckCircle2 className="h-4 w-4 text-blue-200" aria-hidden="true" />
                 {label}
@@ -495,16 +495,15 @@ export default function Home() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Industries and use cases</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              Software and IT help for teams with operational pressure.
+              Support for high-pressure operations.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              Reco Universal is suited for organizations that need practical systems, dependable
-              technical guidance, and a team that can support both business and engineering conversations.
+              We support organizations that need dependable systems, clear guidance, and fast execution.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {industries.map((industry) => (
-              <div key={industry} className="rounded-lg border border-white/10 bg-white/[0.055] p-5">
+              <div key={industry} className="motion-card flow-card rounded-lg border border-white/10 bg-white/[0.055] p-5">
                 <div className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-blue-200" aria-hidden="true" />
                   <span className="font-bold text-white">{industry}</span>
@@ -521,7 +520,7 @@ export default function Home() {
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Company members</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Experienced professionals supporting client delivery.
+                Professionals focused on client delivery.
               </h2>
             </div>
             <a
@@ -536,7 +535,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {members.map((member) => (
-              <article key={member.href} className="rounded-lg border border-white/10 bg-white/[0.045] p-6">
+              <article key={member.href} className="motion-card flow-card rounded-lg border border-white/10 bg-white/[0.045] p-6">
                 <div className="flex items-start justify-between gap-4">
                   <div className="grid h-14 w-14 shrink-0 place-items-center rounded-md bg-blue-500 text-lg font-black text-white">
                     {member.initials}
@@ -566,12 +565,12 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Client confidence</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Clear communication, realistic planning, and production awareness.
+                Clear communication and production awareness.
               </h2>
             </div>
             <div className="grid gap-4">
               {testimonials.map((item) => (
-                <article key={item.name} className="rounded-lg border border-white/10 bg-white/[0.045] p-6">
+                <article key={item.name} className="motion-card flow-card rounded-lg border border-white/10 bg-white/[0.045] p-6">
                   <p className="text-lg leading-8 text-slate-200">“{item.quote}”</p>
                   <div className="mt-5 border-l border-blue-300/40 pl-4">
                     <div className="font-bold text-white">{item.name}</div>
@@ -589,12 +588,12 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">What clients should know</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              Helpful guidance before starting a software project.
+              Guidance for better software decisions.
             </h2>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-3">
             {insightCards.map((item) => (
-              <article key={item.title} className="rounded-lg border border-white/10 bg-white/[0.04] p-7">
+              <article key={item.title} className="motion-card flow-card rounded-lg border border-white/10 bg-white/[0.04] p-7">
                 <h3 className="text-xl font-bold text-white">{item.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-300">{item.body}</p>
                 <a href="#contact" className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-200">
@@ -614,21 +613,19 @@ export default function Home() {
         </div>
         <div className="mx-auto grid max-w-[1500px] gap-12 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr]">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Contact and support</p>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Contact</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              Submit a project request or client support issue.
+              Start the conversation.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              Use the form for project consultations, recruiting conversations, active client
-              support, production questions, or account requests. The selected request type routes
-              the message to the right Reco Universal inbox.
+              Share a project, partnership, or support request. We will route it to the right team.
             </p>
             <div className="mt-8 grid gap-4">
               {[
-                [ServerCog, "Project consultation", "New builds, partnerships, recruiting, and general business requests"],
-                [Database, "Client support", "Active delivery support, production questions, and account requests"],
+                [ServerCog, "Project consultation", "New builds, partnerships, and recruiting"],
+                [Database, "Client support", "Delivery support and production questions"],
               ].map(([Icon, label, detail]) => (
-                <div key={label as string} className="rounded-lg border border-white/10 bg-white/[0.045] p-5">
+                <div key={label as string} className="motion-card flow-card rounded-lg border border-white/10 bg-white/[0.045] p-5">
                   <div className="flex items-center gap-4">
                     <div className="grid h-11 w-11 place-items-center rounded-md bg-blue-500/15 text-blue-100">
                       <Icon className="h-5 w-5" aria-hidden="true" />
@@ -657,10 +654,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-              <a href="#contact" className="inline-flex min-h-12 items-center justify-center rounded-md bg-blue-500 px-5 text-sm font-bold text-white transition hover:bg-blue-400">
+              <a href="#contact" className="inline-flex min-h-12 items-center justify-center rounded-md bg-blue-500 px-5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-400">
                 Start a project
               </a>
-              <a href="#services" className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 bg-white/[0.04] px-5 text-sm font-bold text-white transition hover:border-blue-200/50">
+              <a href="#services" className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/15 bg-white/[0.04] px-5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-blue-200/50">
                 View services
               </a>
             </div>
