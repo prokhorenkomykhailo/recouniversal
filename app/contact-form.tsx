@@ -50,7 +50,7 @@ export function ContactForm() {
         <div>
           <h3 className="text-xl font-bold text-white">Start a conversation</h3>
           <p className="mt-1 text-sm leading-6 text-slate-300">
-            Send a brief request. We will follow up with the right next step.
+            Send a brief AI project or support request. We will follow up with the right next step.
           </p>
         </div>
       </div>
@@ -64,8 +64,8 @@ export function ContactForm() {
             className="h-12 rounded-md border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition focus:border-blue-300"
             defaultValue="contact"
           >
-            <option value="contact">Project inquiry</option>
-            <option value="support">Client support</option>
+            <option value="contact">AI project inquiry</option>
+            <option value="support">AI support request</option>
           </select>
         </label>
         <label className="grid gap-2 text-sm font-semibold text-slate-200">
@@ -130,7 +130,7 @@ export function ContactForm() {
           required
           rows={5}
           className="resize-none rounded-md border border-white/10 bg-slate-950 p-3 text-sm leading-6 text-white outline-none transition placeholder:text-slate-500 focus:border-blue-300 focus:shadow-[0_0_0_3px_rgba(147,197,253,0.12)]"
-          placeholder="Briefly describe the request."
+          placeholder="Briefly describe the AI workflow, automation, or platform need."
         />
       </label>
 

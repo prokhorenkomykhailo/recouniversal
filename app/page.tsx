@@ -1,24 +1,25 @@
 import {
   ArrowRight,
   ArrowUpRight,
+  BadgeCheck,
   BrainCircuit,
   Briefcase,
   Building2,
   CheckCircle2,
   Clock,
   Cloud,
-  Code2,
   Database,
   ExternalLink,
   Layers,
   Mail,
   MapPin,
+  MessageSquareCode,
   Rocket,
-  ServerCog,
   ShieldCheck,
   SquareUserRound,
   Target,
   Users,
+  Verified,
   Workflow,
 } from "lucide-react";
 import { ContactForm } from "./contact-form";
@@ -34,129 +35,129 @@ const navItems = [
 
 const services = [
   {
-    icon: Code2,
-    title: "Application Engineering",
-    body: "Design and delivery of secure web platforms, portals, SaaS products, internal tools, and workflow systems.",
-    points: ["Product strategy", "Full-stack builds", "Release support"],
+    icon: BrainCircuit,
+    title: "AI Application Engineering",
+    body: "AI-enabled portals, copilots, workflow tools, and internal platforms designed for secure business adoption.",
+    points: ["AI copilots", "Full-stack builds", "Human review"],
+  },
+  {
+    icon: MessageSquareCode,
+    title: "AI Agents and Automation",
+    body: "Agent workflows, document intelligence, support automation, and operational assistants connected to real systems.",
+    points: ["Agent design", "Workflow automation", "Knowledge retrieval"],
   },
   {
     icon: Cloud,
-    title: "Cloud and DevOps",
-    body: "Cloud architecture, CI/CD, monitoring, observability, environment setup, and practical infrastructure modernization.",
-    points: ["AWS-ready patterns", "Deployment pipelines", "Operational visibility"],
+    title: "Cloud AI Platforms",
+    body: "Cloud architecture, model integration, deployment pipelines, observability, and environments for AI products.",
+    points: ["Cloud AI", "CI/CD", "Observability"],
   },
   {
     icon: Database,
-    title: "Data and AI Enablement",
-    body: "Data pipelines, reporting layers, AI-assisted operations, automation workflows, and decision-support dashboards.",
-    points: ["Dashboards", "Automation", "Data quality"],
+    title: "Data and Retrieval Systems",
+    body: "Data pipelines, vector search, reporting layers, retrieval-augmented generation, and decision-support dashboards.",
+    points: ["RAG", "Data quality", "Dashboards"],
   },
   {
     icon: ShieldCheck,
-    title: "Security and Compliance Support",
-    body: "Application hardening, identity and access reviews, secure delivery practices, audit preparation, and risk remediation.",
-    points: ["Access control", "Secure SDLC", "Risk review"],
+    title: "AI Governance and Security",
+    body: "Access control, prompt/data risk review, secure SDLC practices, model usage policies, and audit preparation.",
+    points: ["AI risk", "Access control", "Policy review"],
   },
   {
     icon: Workflow,
-    title: "Systems Integration",
-    body: "Reliable integrations between CRMs, ERPs, payments, data stores, support platforms, and third-party APIs.",
-    points: ["API design", "Sync workflows", "Error handling"],
-  },
-  {
-    icon: ServerCog,
-    title: "Managed Technical Support",
-    body: "Post-launch triage, performance checks, documentation, roadmap planning, and continuous improvement for live systems.",
-    points: ["Issue triage", "Monitoring", "Roadmaps"],
+    title: "AI Systems Integration",
+    body: "Reliable integration between AI tools, CRMs, ERPs, data stores, support platforms, and third-party APIs.",
+    points: ["API design", "Model routing", "Error handling"],
   },
 ];
 
 const proofPoints = [
-  ["Business aligned", "Technology decisions tied to scope, cost, timeline, and measurable outcomes."],
-  ["Production minded", "Architecture, release discipline, monitoring, and support planned from the beginning."],
-  ["Security aware", "Identity, access, data handling, and operational risk are reviewed throughout delivery."],
-  ["Clear ownership", "Structured communication, accountable delivery leads, and documented next steps."],
+  ["AI business alignment", "Use cases are tied to workflow value, cost, user adoption, and measurable outcomes."],
+  ["Production AI delivery", "Model integrations, release discipline, monitoring, and support are planned from the beginning."],
+  ["Responsible adoption", "Identity, data handling, human review, and AI risk controls are reviewed throughout delivery."],
+  ["Clear ownership", "Structured communication, accountable AI delivery leads, and documented next steps."],
 ];
 
 const industries = [
   {
     title: "Technology and SaaS",
-    body: "Product teams that need additional engineering capacity, platform modernization, or production support.",
-    outcomes: "Faster release cycles and clearer technical roadmaps.",
+    body: "Product teams adding copilots, agent workflows, AI search, analytics, or automated customer operations.",
+    outcomes: "Faster AI feature delivery and clearer technical roadmaps.",
   },
   {
     title: "Professional Services",
-    body: "Client portals, reporting workflows, billing integrations, document automation, and secure collaboration systems.",
-    outcomes: "Less manual coordination and better client visibility.",
+    body: "AI-assisted research, document automation, client portals, knowledge search, and reporting workflows.",
+    outcomes: "Less manual coordination and faster client delivery.",
   },
   {
     title: "Healthcare Operations",
-    body: "Operational dashboards, scheduling workflows, integrations, and internal tools built with careful data handling.",
-    outcomes: "More reliable process execution and cleaner reporting.",
+    body: "Operational dashboards, scheduling workflows, document processing, and internal tools with careful data controls.",
+    outcomes: "Cleaner reporting and safer AI-assisted operations.",
   },
   {
     title: "Staffing and Recruiting",
-    body: "Talent platforms, CRM integrations, candidate workflows, matching tools, and analytics for distributed teams.",
-    outcomes: "Improved workflow speed and candidate tracking.",
+    body: "Candidate matching, resume intelligence, CRM integrations, recruiter copilots, and analytics for distributed teams.",
+    outcomes: "Improved workflow speed and candidate insight.",
   },
   {
     title: "Finance and Back Office",
-    body: "Approval systems, secure reporting, data reconciliation, audit workflows, and operational automation.",
-    outcomes: "Better controls and reduced spreadsheet dependency.",
+    body: "Approval automation, secure reporting, reconciliation support, audit workflows, and AI-assisted operations.",
+    outcomes: "Better controls and reduced repetitive work.",
   },
   {
     title: "Enterprise Operations",
-    body: "Legacy modernization, API programs, cloud migration, observability, and support models for internal systems.",
-    outcomes: "Lower operational risk and stronger system visibility.",
+    body: "Legacy modernization, AI integration programs, cloud migration, observability, and support for internal systems.",
+    outcomes: "Lower AI adoption risk and stronger system visibility.",
   },
 ];
 
 const portfolioItems = [
   {
     image: "/office-collaboration.jpg",
-    label: "Client Portal",
-    title: "Secure service portal for distributed operations",
-    body: "A role-based portal for request intake, approvals, document exchange, and status visibility across client teams.",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Auth"],
-    impact: "Reduced manual handoffs and gave leadership a reliable operational view.",
+    label: "AI Client Portal",
+    title: "Secure portal with AI-assisted service workflows",
+    body: "A role-based portal for request intake, document exchange, AI summaries, approvals, and status visibility.",
+    tech: ["Next.js", "RAG", "PostgreSQL", "Auth"],
+    impact: "Reduced manual handoffs and helped teams review client activity faster.",
   },
   {
     image: "/data-dashboard.jpg",
-    label: "Data Platform",
-    title: "Executive reporting and KPI dashboard",
-    body: "Data pipelines and dashboards that replaced spreadsheet reporting with consistent metrics and audit-ready exports.",
-    tech: ["ETL", "SQL", "BI", "APIs"],
-    impact: "Improved reporting speed and helped teams review performance from one source of truth.",
+    label: "AI Data Platform",
+    title: "Executive reporting with predictive insights",
+    body: "Data pipelines, dashboards, and AI-assisted analysis that replaced spreadsheet reporting with consistent metrics.",
+    tech: ["ETL", "SQL", "BI", "ML"],
+    impact: "Improved reporting speed and surfaced decision signals from operational data.",
   },
   {
     image: "/cloud-servers.jpg",
-    label: "Cloud Modernization",
-    title: "Production cloud environment and release pipeline",
-    body: "Cloud infrastructure, deployment workflows, monitoring, backups, and rollback practices for a growing product team.",
-    tech: ["AWS", "Docker", "CI/CD", "Observability"],
-    impact: "Stabilized releases and improved incident response readiness.",
+    label: "Cloud AI",
+    title: "Production environment for AI-enabled products",
+    body: "Cloud infrastructure, model integration workflows, monitoring, backups, and rollback practices for AI products.",
+    tech: ["AWS", "Docker", "CI/CD", "LLM Ops"],
+    impact: "Stabilized AI releases and improved operational readiness.",
   },
   {
     image: "/software-workspace.jpg",
-    label: "Workflow Automation",
-    title: "Back-office automation for service teams",
-    body: "Automated intake, routing, notifications, task tracking, and integration points for operational support teams.",
-    tech: ["React", "REST APIs", "Queues", "CRM"],
+    label: "AI Automation",
+    title: "Agent workflows for back-office teams",
+    body: "Automated intake, routing, notifications, task tracking, and AI-assisted handoffs across operational systems.",
+    tech: ["React", "Agents", "Queues", "CRM"],
     impact: "Reduced repetitive work and improved SLA visibility.",
   },
   {
     image: "/code-monitor.jpg",
-    label: "Application Recovery",
-    title: "Legacy codebase review and modernization roadmap",
-    body: "Technical assessment, risk mapping, documentation, architecture recommendations, and staged delivery planning.",
-    tech: ["Architecture", "Security", "Testing", "Roadmap"],
-    impact: "Created a practical modernization path without interrupting active users.",
+    label: "AI Modernization",
+    title: "Legacy system review for AI readiness",
+    body: "Technical assessment, data readiness review, integration planning, architecture recommendations, and staged delivery.",
+    tech: ["Architecture", "Security", "Data", "Roadmap"],
+    impact: "Created a practical AI adoption path without interrupting active users.",
   },
   {
     image: "/hero-infrastructure.jpg",
-    label: "IT Reliability",
-    title: "Monitoring and support model for critical systems",
-    body: "Incident workflows, monitoring standards, runbooks, and support escalation processes for production applications.",
+    label: "AI Operations",
+    title: "Monitoring and support model for AI systems",
+    body: "Incident workflows, model usage monitoring, runbooks, and escalation processes for AI-enabled applications.",
     tech: ["Runbooks", "Alerts", "SLOs", "Support"],
     impact: "Improved operational clarity and support handoffs.",
   },
@@ -165,53 +166,53 @@ const portfolioItems = [
 const deliverySteps = [
   {
     title: "Assess and align",
-    body: "We review goals, users, systems, dependencies, risk, and success measures before implementation begins.",
+    body: "We review AI use cases, users, data, systems, risk, and success measures before implementation begins.",
   },
   {
     title: "Design and build",
-    body: "We deliver interfaces, APIs, workflows, integrations, environments, and documentation with regular stakeholder checkpoints.",
+    body: "We deliver AI interfaces, APIs, agents, retrieval workflows, integrations, environments, and documentation.",
   },
   {
     title: "Launch and operate",
-    body: "We support release, production monitoring, issue triage, improvement planning, and future roadmap decisions.",
+    body: "We support release, model monitoring, issue triage, improvement planning, and future roadmap decisions.",
   },
 ];
 
 const leadershipModel = [
   {
     title: "Executive Leadership",
-    body: "Business goals, client governance, strategic partnerships, and engagement accountability.",
+    body: "AI business goals, client governance, strategic adoption planning, and engagement accountability.",
   },
   {
     title: "Technology Leadership",
-    body: "Architecture, cloud strategy, engineering standards, security posture, and delivery quality.",
+    body: "AI architecture, cloud strategy, engineering standards, security posture, and delivery quality.",
   },
   {
     title: "Delivery Leadership",
-    body: "Roadmaps, staffing, communication cadence, release planning, and measurable outcomes.",
+    body: "AI roadmaps, staffing, communication cadence, release planning, and measurable outcomes.",
   },
   {
     title: "Engineering Leadership",
-    body: "Technical execution, code quality, reviews, implementation support, and production readiness.",
+    body: "Agent implementation, code quality, reviews, integration support, and production readiness.",
   },
 ];
 
 const careerTracks = [
   {
-    title: "Software Engineering",
-    body: "Frontend, backend, full-stack, mobile, quality engineering, and platform delivery roles.",
+    title: "AI Software Engineering",
+    body: "Frontend, backend, full-stack, model integration, evaluation, and platform delivery roles.",
   },
   {
-    title: "Cloud and Security",
-    body: "Infrastructure, DevOps, observability, identity, security review, and reliability engineering roles.",
+    title: "AI Cloud and Security",
+    body: "Infrastructure, LLM operations, observability, identity, security review, and reliability engineering roles.",
   },
   {
     title: "Data and AI",
-    body: "Data engineering, analytics, automation, AI workflow design, and operational intelligence roles.",
+    body: "Data engineering, retrieval systems, analytics, automation, AI workflow design, and operational intelligence roles.",
   },
   {
     title: "Client Delivery",
-    body: "Business analysis, technical project management, solution consulting, and support leadership roles.",
+    body: "AI business analysis, technical project management, solution consulting, and support leadership roles.",
   },
 ];
 
@@ -263,6 +264,40 @@ const contactDetails = [
     label: "Business hours",
     value: "Monday-Friday, 9:00 AM-6:00 PM ET",
   },
+];
+
+const verificationBadges = [
+  {
+    icon: BadgeCheck,
+    title: "AI Readiness Review",
+    body: "Use-case, data, integration, and rollout review before build.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Responsible AI Controls",
+    body: "Human review, access control, risk checks, and audit planning.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud AI Delivery",
+    body: "Deployment, monitoring, CI/CD, and operating procedures.",
+  },
+  {
+    icon: Verified,
+    title: "Production Support",
+    body: "Runbooks, triage, improvement planning, and release support.",
+  },
+];
+
+const platformPartners = [
+  "OpenAI",
+  "Azure AI",
+  "AWS",
+  "Google Cloud",
+  "NVIDIA",
+  "Snowflake",
+  "Databricks",
+  "LangChain",
 ];
 
 function Brand({ compact = false }: { compact?: boolean }) {
@@ -328,14 +363,14 @@ export default function Home() {
           <div className="max-w-4xl animate-fade-up">
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-blue-300/20 bg-white/[0.06] px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-100 shadow-2xl shadow-blue-950/30 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-blue-300 shadow-[0_0_18px_rgba(147,197,253,0.8)]" />
-              Software development and IT consulting
+              AI technology consulting and engineering
             </div>
             <h1 className="max-w-4xl text-4xl font-black leading-[1.08] tracking-normal text-white sm:text-5xl lg:text-6xl">
-              Engineering teams for software that needs to work in the real world.
+              AI solutions engineered for real business operations.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              Reco Universal helps organizations plan, build, modernize, and support software,
-              cloud, data, and operational technology systems.
+              Reco Universal helps organizations design, build, integrate, and support AI
+              applications, agent workflows, data platforms, and production-ready automation.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
@@ -377,12 +412,12 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Services</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Consulting and engineering across the technology lifecycle.
+                AI consulting and engineering across the full adoption lifecycle.
               </h2>
             </div>
             <p className="text-base leading-8 text-slate-300">
-              We combine advisory, implementation, integration, and managed support so clients can
-              move from business need to reliable production system with one accountable partner.
+              We combine AI strategy, implementation, integration, governance, and managed support
+              so clients can move from idea to reliable production system with one accountable partner.
             </p>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -409,7 +444,7 @@ export default function Home() {
           <div className="mb-10 max-w-3xl">
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Why teams choose us</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              Delivery discipline clients can evaluate quickly.
+              AI delivery discipline clients can evaluate quickly.
             </h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -432,12 +467,12 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Industries</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Technology support for teams with real operational pressure.
+                AI technology support for teams with real operational pressure.
               </h2>
             </div>
             <p className="text-base leading-8 text-slate-300">
-              Our work is strongest where software, cloud systems, data, security, and support need
-              to fit into day-to-day business operations.
+              Our work is strongest where AI applications, cloud systems, data, security, and support
+              need to fit into day-to-day business operations.
             </p>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -460,18 +495,18 @@ export default function Home() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">About Us</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              A software and IT consulting partner built for accountable delivery.
+              An AI technology consulting partner built for accountable delivery.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              Reco Universal supports clients that need practical engineering judgment, reliable
-              execution, and clear communication across strategy, development, cloud, data, and support.
+              Reco Universal supports clients that need practical AI judgment, reliable execution,
+              and clear communication across strategy, engineering, data, cloud, governance, and support.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {[
-                [Target, "Business-first planning"],
-                [Layers, "Architecture with delivery context"],
-                [Users, "Flexible teams for client needs"],
-                [Rocket, "Launch and post-launch ownership"],
+                [Target, "AI use-case planning"],
+                [Layers, "Architecture with data context"],
+                [Users, "Human review by design"],
+                [Rocket, "Launch and AI operations"],
               ].map(([Icon, label]) => (
                 <div key={label as string} className="motion-card rounded-lg border border-white/10 bg-white/[0.045] p-4">
                   <Icon className="h-5 w-5 text-blue-200" aria-hidden="true" />
@@ -490,9 +525,9 @@ export default function Home() {
             </div>
             <figcaption className="grid gap-4 border-t border-white/10 p-6 md:grid-cols-3">
               {[
-                ["Advisory", "Scope, roadmap, risk"],
-                ["Engineering", "Build, integrate, test"],
-                ["Operations", "Launch, support, improve"],
+                ["Advisory", "Use cases, roadmap, risk"],
+                ["Engineering", "Build, integrate, evaluate"],
+                ["Operations", "Launch, monitor, improve"],
               ].map(([title, body]) => (
                 <div key={title}>
                   <div className="text-lg font-black text-white">{title}</div>
@@ -510,12 +545,12 @@ export default function Home() {
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Portfolio</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Representative work with clear business outcomes.
+                AI work with clear business outcomes.
               </h2>
             </div>
             <p className="max-w-xl text-base leading-8 text-slate-300">
-              Example engagements show how Reco Universal supports software delivery, data, cloud,
-              modernization, and production operations.
+              Example engagements show how Reco Universal supports AI applications, automation,
+              data platforms, cloud delivery, modernization, and production operations.
             </p>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -550,11 +585,11 @@ export default function Home() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Delivery model</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              From strategy to production support.
+              From AI strategy to production support.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              Mature delivery requires more than writing code. We align stakeholders, manage risk,
-              document decisions, and support the systems after they launch.
+              Mature AI delivery requires more than connecting a model. We align stakeholders,
+              manage risk, document decisions, evaluate behavior, and support systems after launch.
             </p>
           </div>
           <div className="grid gap-4">
@@ -576,8 +611,8 @@ export default function Home() {
         <div className="mx-auto mt-14 grid max-w-[1500px] gap-4 px-5 sm:px-8 lg:grid-cols-3">
           {[
             ["/office-collaboration.jpg", "Software professionals collaborating in an office", "Collaborative planning"],
-            ["/network-rack.jpg", "Network server rack with blue lighting", "Infrastructure and IT"],
-            ["/data-dashboard.jpg", "Data visualization dashboard", "Data and reporting"],
+            ["/network-rack.jpg", "Network server rack with blue lighting", "AI cloud infrastructure"],
+            ["/data-dashboard.jpg", "Data visualization dashboard", "AI data and reporting"],
           ].map(([src, alt, label]) => (
             <figure key={src} className="motion-card flow-card overflow-hidden rounded-lg border border-white/10 bg-white/[0.035]">
               <div className="h-56 overflow-hidden">
@@ -598,11 +633,11 @@ export default function Home() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Leadership model</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Clear roles behind every engagement.
+                Clear AI roles behind every engagement.
               </h2>
               <p className="mt-6 text-base leading-8 text-slate-300">
-                Client work is organized around executive oversight, technology direction, delivery
-                management, and hands-on engineering ownership.
+                AI client work is organized around executive oversight, technology direction, delivery
+                management, governance, and hands-on engineering ownership.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -624,7 +659,7 @@ export default function Home() {
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Company members</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-                Professionals focused on client delivery.
+                Professionals focused on AI-enabled client delivery.
               </h2>
             </div>
             <a
@@ -668,11 +703,11 @@ export default function Home() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Career</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              Build technology that clients depend on.
+              Build AI technology that clients depend on.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              Reco Universal works with engineers, consultants, delivery leads, and technical
-              specialists who care about practical systems, direct communication, and dependable outcomes.
+              Reco Universal works with engineers, AI consultants, delivery leads, and technical
+              specialists who care about practical automation, direct communication, and dependable outcomes.
             </p>
             <a
               href="#contact"
@@ -703,10 +738,10 @@ export default function Home() {
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Contact</p>
             <h2 className="mt-4 text-3xl font-black text-white sm:text-5xl">
-              Tell us what you need to build or improve.
+              Tell us what AI workflow you need to build or improve.
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              Send a short request and we will route it to the right consulting, engineering, or support lead.
+              Send a short request and we will route it to the right AI consulting, engineering, or support lead.
             </p>
             <div className="mt-8 grid gap-4">
               {contactDetails.map(({ icon: Icon, label, value, href }) => (
@@ -734,14 +769,61 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="border-y border-white/10 bg-[#07111E] py-20">
+        <div className="mx-auto max-w-[1500px] px-5 sm:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Verification badges</p>
+              <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
+                AI delivery signals clients can trust.
+              </h2>
+            </div>
+            <p className="text-base leading-8 text-slate-300">
+              These delivery checks help teams evaluate AI projects with clearer risk controls,
+              stronger production readiness, and better operating discipline.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {verificationBadges.map(({ icon: Icon, title, body }) => (
+              <article key={title} className="motion-card flow-card rounded-lg border border-blue-300/15 bg-blue-500/[0.07] p-6">
+                <div className="grid h-12 w-12 place-items-center rounded-md border border-blue-200/20 bg-blue-400/10 text-blue-100">
+                  <Icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <h3 className="mt-5 text-lg font-bold text-white">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{body}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-14 rounded-lg border border-white/10 bg-white/[0.035] p-6 shadow-2xl shadow-blue-950/20">
+            <div className="text-center">
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Platform ecosystem</p>
+              <h3 className="mt-3 text-2xl font-black text-white">
+                AI platforms and cloud systems we commonly integrate with.
+              </h3>
+            </div>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {platformPartners.map((partner) => (
+                <div
+                  key={partner}
+                  className="motion-card rounded-lg border border-white/10 bg-[#050A13]/80 px-5 py-5 text-center text-lg font-black text-slate-100 shadow-lg shadow-black/20"
+                >
+                  {partner}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-white/10 bg-[#03070E]">
         <div className="mx-auto max-w-[1500px] px-5 py-16 sm:px-8">
           <div className="grid gap-10 border-b border-white/10 pb-12 lg:grid-cols-[1.25fr_0.9fr] lg:items-end">
             <div>
               <Brand />
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300">
-                Software development, IT consulting, cloud, security, data, and production support
-                for organizations that need reliable technical execution.
+                AI application development, agent automation, data platforms, cloud delivery,
+                governance, and production support for organizations adopting AI responsibly.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
@@ -769,10 +851,19 @@ export default function Home() {
             <div>
               <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-white">Services</h3>
               <ul className="mt-4 grid gap-3 text-sm text-slate-400">
-                <li>Application engineering</li>
-                <li>Cloud and DevOps</li>
-                <li>Data and AI enablement</li>
-                <li>Security consulting</li>
+                {[
+                  "AI application engineering",
+                  "AI agents and automation",
+                  "Data and retrieval systems",
+                  "AI governance and security",
+                ].map((item) => (
+                  <li key={item}>
+                    <a href="#portfolio" className="inline-flex items-center gap-2 transition hover:text-blue-200">
+                      <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                      {item}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -785,28 +876,34 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-white">Contact</h3>
-              <ul className="mt-4 grid gap-3 text-sm text-slate-400">
-                <li>
-                  <a href="mailto:contact@recouniversal.com" className="transition hover:text-blue-200">
-                    contact@recouniversal.com
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="transition hover:text-blue-200">
-                    Submit contact form
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/recouniversal"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="transition hover:text-blue-200"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-              </ul>
+              <div className="mt-4 grid gap-3">
+                <a
+                  href="mailto:contact@recouniversal.com"
+                  aria-label="Email Reco Universal"
+                  className="motion-card inline-flex items-center gap-3 rounded-md border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-blue-200/50 hover:text-blue-100"
+                >
+                  <Mail className="h-4 w-4 text-blue-200" aria-hidden="true" />
+                  Email
+                </a>
+                <a
+                  href="#contact"
+                  aria-label="Open contact form"
+                  className="motion-card inline-flex items-center gap-3 rounded-md border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-blue-200/50 hover:text-blue-100"
+                >
+                  <MessageSquareCode className="h-4 w-4 text-blue-200" aria-hidden="true" />
+                  Contact form
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/recouniversal"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Reco Universal LinkedIn"
+                  className="motion-card inline-flex items-center gap-3 rounded-md border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-slate-200 transition hover:border-blue-200/50 hover:text-blue-100"
+                >
+                  <SquareUserRound className="h-4 w-4 text-blue-200" aria-hidden="true" />
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         </div>
