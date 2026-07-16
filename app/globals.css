@@ -151,6 +151,24 @@ button {
   }
 }
 
+@keyframes marquee-left {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .animate-fade-up {
   animation: fade-up 780ms ease both;
 }
@@ -298,6 +316,30 @@ button {
 .flow-grid > * {
   position: relative;
   z-index: 1;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 32s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track[data-direction="right"] {
+  animation-name: marquee-right;
+  animation-duration: 36s;
+}
+
+.marquee-row:nth-child(2) .marquee-track {
+  animation-duration: 40s;
+}
+
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {

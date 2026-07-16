@@ -289,15 +289,19 @@ const verificationBadges = [
   },
 ];
 
-const platformPartners = [
-  "OpenAI",
-  "Azure AI",
-  "AWS",
-  "Google Cloud",
-  "NVIDIA",
-  "Snowflake",
-  "Databricks",
-  "LangChain",
+const platformRows = [
+  {
+    direction: "left",
+    items: ["OpenAI", "Anthropic", "Azure AI", "AWS Bedrock", "Google Vertex AI", "NVIDIA"],
+  },
+  {
+    direction: "right",
+    items: ["Hugging Face", "LangChain", "Pinecone", "Weaviate", "Databricks", "Snowflake"],
+  },
+  {
+    direction: "left",
+    items: ["GitHub", "Vercel", "Docker", "Kubernetes", "Terraform", "MongoDB", "PostgreSQL"],
+  },
 ];
 
 function Brand({ compact = false }: { compact?: boolean }) {
@@ -795,20 +799,26 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-14 rounded-lg border border-white/10 bg-white/[0.035] p-6 shadow-2xl shadow-blue-950/20">
+          <div className="mt-14 overflow-hidden rounded-lg border border-white/10 bg-white/[0.035] py-8 shadow-2xl shadow-blue-950/20">
             <div className="text-center">
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Platform ecosystem</p>
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">AI and software ecosystem</p>
               <h3 className="mt-3 text-2xl font-black text-white">
-                AI platforms and cloud systems we commonly integrate with.
+                Platforms our AI delivery work commonly connects with.
               </h3>
             </div>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {platformPartners.map((partner) => (
-                <div
-                  key={partner}
-                  className="motion-card rounded-lg border border-white/10 bg-[#050A13]/80 px-5 py-5 text-center text-lg font-black text-slate-100 shadow-lg shadow-black/20"
-                >
-                  {partner}
+            <div className="mt-9 grid gap-4">
+              {platformRows.map((row, rowIndex) => (
+                <div key={rowIndex} className="marquee-row marquee-mask overflow-hidden">
+                  <div className="marquee-track" data-direction={row.direction}>
+                    {[...row.items, ...row.items].map((partner, index) => (
+                      <div
+                        key={`${partner}-${index}`}
+                        className="mx-2 grid min-w-44 place-items-center rounded-lg border border-white/10 bg-[#050A13]/82 px-6 py-5 text-center text-lg font-black text-slate-100 shadow-lg shadow-black/20 transition duration-300 hover:border-blue-200/45 hover:bg-blue-500/10 hover:text-blue-100"
+                      >
+                        {partner}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
