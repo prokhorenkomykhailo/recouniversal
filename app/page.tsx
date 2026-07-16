@@ -350,7 +350,7 @@ export default function Home() {
               <div className="flow-card grid gap-3 rounded-2xl border border-white/10 bg-[#050A13]/70 p-4 shadow-2xl shadow-blue-950/20 backdrop-blur sm:grid-cols-4">
                 {[
                   ["2020", "Founded"],
-                  ["NYC", "Base"],
+                  ["New York", "Base"],
                   ["11-50", "Team"],
                   ["Global", "Reach"],
                 ].map(([value, label]) => (
@@ -696,7 +696,7 @@ export default function Home() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-white">Contact</h3>
             <ul className="mt-4 grid gap-3 text-sm text-slate-400">
-              <li>New York, United States</li>
+              <li>33 Irving Pl, New York, NY 10003</li>
               <li>
                 <a href="#contact" className="transition hover:text-blue-200">
                   Submit contact form
