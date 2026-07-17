@@ -293,15 +293,37 @@ const verificationBadges = [
 const platformRows = [
   {
     direction: "left",
-    items: ["OpenAI", "Anthropic", "Azure AI", "AWS Bedrock", "Google Vertex AI", "NVIDIA"],
+    items: [
+      { name: "OpenAI", slug: "openai" },
+      { name: "Anthropic", slug: "anthropic" },
+      { name: "Azure AI", slug: "microsoftazure" },
+      { name: "AWS Bedrock", slug: "amazonaws" },
+      { name: "Google Vertex AI", slug: "googlecloud" },
+      { name: "NVIDIA", slug: "nvidia" },
+    ],
   },
   {
     direction: "right",
-    items: ["Hugging Face", "LangChain", "Pinecone", "Weaviate", "Databricks", "Snowflake"],
+    items: [
+      { name: "Hugging Face", slug: "huggingface" },
+      { name: "LangChain", slug: "langchain" },
+      { name: "Qdrant", slug: "qdrant" },
+      { name: "Milvus", slug: "milvus" },
+      { name: "Databricks", slug: "databricks" },
+      { name: "Snowflake", slug: "snowflake" },
+    ],
   },
   {
     direction: "left",
-    items: ["GitHub", "Vercel", "Docker", "Kubernetes", "Terraform", "MongoDB", "PostgreSQL"],
+    items: [
+      { name: "GitHub", slug: "github" },
+      { name: "Vercel", slug: "vercel" },
+      { name: "Docker", slug: "docker" },
+      { name: "Kubernetes", slug: "kubernetes" },
+      { name: "Terraform", slug: "terraform" },
+      { name: "MongoDB", slug: "mongodb" },
+      { name: "PostgreSQL", slug: "postgresql" },
+    ],
   },
 ];
 
@@ -778,7 +800,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1500px] px-5 sm:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">Verification badges</p>
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-blue-300">AI delivery checks</p>
               <h2 className="mt-4 text-3xl font-black text-white sm:text-4xl">
                 AI delivery signals clients can trust.
               </h2>
@@ -788,19 +810,16 @@ export default function Home() {
               stronger production readiness, and better operating discipline.
             </p>
           </div>
-          <div className="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
-            <VerificationBadge />
-            <div className="grid gap-4 sm:grid-cols-2">
-              {verificationBadges.map(({ icon: Icon, title, body }) => (
-                <article key={title} className="motion-card flow-card rounded-lg border border-blue-300/15 bg-blue-500/[0.07] p-6">
-                  <div className="grid h-12 w-12 place-items-center rounded-md border border-blue-200/20 bg-blue-400/10 text-blue-100">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <h3 className="mt-5 text-lg font-bold text-white">{title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">{body}</p>
-                </article>
-              ))}
-            </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {verificationBadges.map(({ icon: Icon, title, body }) => (
+              <article key={title} className="motion-card flow-card rounded-lg border border-blue-300/15 bg-blue-500/[0.07] p-6">
+                <div className="grid h-12 w-12 place-items-center rounded-md border border-blue-200/20 bg-blue-400/10 text-blue-100">
+                  <Icon className="h-6 w-6" aria-hidden="true" />
+                </div>
+                <h3 className="mt-5 text-lg font-bold text-white">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{body}</p>
+              </article>
+            ))}
           </div>
 
           <div className="mt-14 overflow-hidden rounded-lg border border-white/10 bg-white/[0.035] py-8 shadow-2xl shadow-blue-950/20">
@@ -816,10 +835,17 @@ export default function Home() {
                   <div className="marquee-track" data-direction={row.direction}>
                     {[...row.items, ...row.items].map((partner, index) => (
                       <div
-                        key={`${partner}-${index}`}
-                        className="mx-2 grid min-w-44 place-items-center rounded-lg border border-white/10 bg-[#050A13]/82 px-6 py-5 text-center text-lg font-black text-slate-100 shadow-lg shadow-black/20 transition duration-300 hover:border-blue-200/45 hover:bg-blue-500/10 hover:text-blue-100"
+                        key={`${partner.name}-${index}`}
+                        className="mx-2 grid min-w-36 place-items-center rounded-lg border border-white/10 bg-[#050A13]/82 px-6 py-5 shadow-lg shadow-black/20 transition duration-300 hover:border-blue-200/45 hover:bg-blue-500/10"
+                        title={partner.name}
+                        aria-label={partner.name}
                       >
-                        {partner}
+                        <img
+                          src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${partner.slug}.svg`}
+                          alt=""
+                          className="h-10 w-10 object-contain opacity-90 invert"
+                          loading="lazy"
+                        />
                       </div>
                     ))}
                   </div>
@@ -919,6 +945,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="mt-12 max-w-md">
+            <VerificationBadge />
           </div>
         </div>
         <div className="border-t border-white/10 px-5 py-6 text-center text-xs text-slate-500">
