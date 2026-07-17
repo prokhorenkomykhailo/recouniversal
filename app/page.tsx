@@ -946,14 +946,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-12 max-w-md">
-            <VerificationBadge />
-          </div>
         </div>
         <div className="border-t border-white/10 px-5 py-6 text-center text-xs text-slate-500">
           Reco Universal Global Talent. Copyright 2026. All rights reserved.
         </div>
       </footer>
+      <VerificationBadge />
     </main>
   );
 }
