@@ -1,6 +1,6 @@
 "use client";
 
-import { BadgeCheck, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const badgeItems = [
@@ -93,19 +93,15 @@ export function VerificationBadge() {
                   setDocumentOpen(true);
                   setMenuOpen(false);
                 }}
-                className="verify-menu-item pointer-events-auto group grid grid-cols-[4.7rem_1fr_auto] items-center gap-3 rounded-lg border border-white/12 bg-[#071322]/94 p-3 text-left shadow-2xl shadow-black/30 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-blue-200/50 hover:bg-blue-500/12"
+                className="verify-menu-item pointer-events-auto group overflow-hidden rounded-lg border border-white/12 bg-[#071322]/94 p-2 shadow-2xl shadow-black/30 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-blue-200/50 hover:bg-blue-500/12"
                 style={{ transitionDelay: menuOpen ? `${index * 55}ms` : "0ms" }}
+                aria-label={`Open ${item} verification badge`}
               >
                 <img
                   src="/verification-badge.png"
                   alt=""
-                  className="h-12 w-full rounded-md object-cover object-left"
+                  className="h-auto w-full rounded-md transition duration-500 group-hover:scale-[1.03]"
                 />
-                <span>
-                  <span className="block text-sm font-black text-white">{item}</span>
-                  <span className="mt-1 block text-xs font-semibold text-blue-200">Verified delivery signal</span>
-                </span>
-                <BadgeCheck className="h-5 w-5 text-blue-200 transition duration-300 group-hover:scale-110" aria-hidden="true" />
               </button>
             ))}
           </div>
